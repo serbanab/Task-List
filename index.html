@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta charset="UTF-8">
+
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/1fa50513de.js" crossorigin="anonymous"></script>
+
+ <title>Task list</title> 
+</head>
+<body>
+
+
+  <div class="container" >
+    <div class="card" >
+      <div class="card-body" >
+        <h2>Task List</h2>
+        <form id="form" >
+          <label for="task-input" class="form-label" >Add Task</label>
+          <input type="text" class="form-control" id="task-input" name="task-input" placeholder="Write a Task"> 
+          <input type="submit" class="btn btn-primary mt-3 col-12 col-lg-1" id="task-btn" value="AddTask"> 
+        </form>
+      </div>
+    <hr>
+      <div class="card-body" >
+        <h3>Tasks</h3>
+        <label for="filter" class="form-label" >Filter Tasks</label>
+        <input type="text" class="form-control" name="filter" id="filter-input" placeholder="Search for Task" >
+        <ul class="list-group mt-3 " id = "list">
+        </ul >
+      </div>
+      <div class="card-body" >
+        <button class="btn btn-dark col-12 col-lg-2 "  id="btn" >DeleteAll</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="index.js"></script>
+
+</body>
+</html>
